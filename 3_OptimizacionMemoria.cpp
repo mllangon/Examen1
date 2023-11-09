@@ -7,3 +7,12 @@ void cambio(int* a, int* b){
     *b = temp;
 }
 
+int main(){
+    int num = 3;
+    int num2= 7;
+
+cout<<"Valores sin cambio, 1º =  "<< num <<" ,2º = "<< num2 <<endl;
+int *ptr = &num;
+int *ptr2 = &num2;
+
+}
