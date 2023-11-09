@@ -19,3 +19,10 @@ public:
         cout << "Experiencia: " << experiencia << " anos" << endl;
     }
 };
+
+int main(){
+    Profesor profesor1("Ruben", 35, "Prodramacion", 7);
+    profesor1.info_profesor();
+
+    return 0;
+}
