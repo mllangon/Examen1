@@ -29,5 +29,17 @@ int main(){
 cout<<"Grados disponibles: ";
 for (const Estudiante& estudiante : estudiantes) {
     cout << estudiante.getNombre() << "- Grado: "<<estudiante.getGrado() << endl;
+}
+    int buscaGrado;
+    cout<<"Ingrese el grado que desea buscar: ";
+    cin>>buscaGrado;
+
+    cout<"Estudiantes en el grado "<<buscaGrado<<": ";
+    for(const Estudiante& estudiante : estudiantes) {
+        if (estudiante.getGrado() == buscaGrado) {
+            cout << estudiante.getNombre() << endl;
+        }
+    }
+    return 0;
 
 }
