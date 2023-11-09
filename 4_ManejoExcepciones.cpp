@@ -19,5 +19,6 @@ int main(){
     }catch(const char* error){
         cout<<"Esxcepcion atrapada: "<<error<<endl;
     }
-
+cout<<"Fin del programa"<<endl;
+    return 0;
 }
