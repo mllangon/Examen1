@@ -31,7 +31,5 @@ int main(){
         cout << "Operacion no valida." << endl;
     }
 
-
-
-
+    return 0;
 }
