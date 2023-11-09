@@ -19,5 +19,15 @@ class Estudiante {
 private:
     string nombre;
     vector<string> materias;
+public:
+    Estudiante(string nombre): nombre(nombre) {}
+
+    void registrar_materia(const string& materia) {
+        if (materia == "Matematicas" || materia == "Fisica" || materia == "Quimica" || materia == "Historia") {
+            materias.push_back(materia);
+        } else {
+            throw MateriaExcepcion("La materia " + materia + " no esta disponible");
+        }
+    }
 
 };
