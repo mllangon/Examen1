@@ -26,3 +26,17 @@ private:
     string nombre;
     vector<string> materias;
 };
+
+int main(){
+    Estudiante estudiante("Mario");
+
+    estudiante.registrarMateria("Matematicas");
+    estudiante.registrarMateria("Fisica");
+    estudiante.registrarMateria("Quimica");
+    estudiante.registrarMateria("Historia");
+
+    estudiante.listarmaterias();
+
+    return 0;
+
+}
