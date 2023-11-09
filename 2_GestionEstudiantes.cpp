@@ -9,6 +9,14 @@ private:
     string grado,
 
 public:
+    void infoEstudiante(){
+        cout<<"Registra el nombre del estudiante: ";
+        cin>> nombre;
+        cout<<"Registra la edad del estudiante: ";
+        cin>> edad;
+        cout<<"Registra el grado del estudiante: ";
+        cin>> grado;
+    };
 
 
 };
