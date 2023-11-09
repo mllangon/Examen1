@@ -14,3 +14,10 @@ public:
         return mensaje;
     }
 };
+
+class Estudiante {
+private:
+    string nombre;
+    vector<string> materias;
+
+};
