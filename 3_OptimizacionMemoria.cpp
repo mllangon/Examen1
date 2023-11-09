@@ -11,8 +11,12 @@ int main(){
     int num = 3;
     int num2= 7;
 
-cout<<"Valores sin cambio, 1º =  "<< num <<" ,2º = "<< num2 <<endl;
+cout<<"Valores sin cambio, primero =  "<< num <<" ,segundo = "<< num2 <<endl;
 int *ptr = &num;
 int *ptr2 = &num2;
 
+cambio(ptr,ptr2);
+cout<<"Valores cambiados, primero = "<< num <<" ,segundo = "<< num2 <<endl;
+
+    return 0;
 }
