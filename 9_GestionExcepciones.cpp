@@ -37,5 +37,21 @@ public:
         }
         cout << endl;
     }
-
 };
+
+int main(){
+    Estudiante estudiante("Mario");
+
+    try{
+        estudiante.registrar_materia("Matematicas");
+        estudiante.registrar_materia("Fisica");
+        estudiante.registrar_materia("Quimica");
+        estudiante.registrar_materia("Quimica"); // Error
+        estudiante.registrar_materia("Historia");
+
+        estudiante.lista();
+    } catch (const MateriaExcepcion& ex){
+      cerr <<"La materia matematicas ya ha sido registrada."<< endl;
+    }
+    return 0;
+}
