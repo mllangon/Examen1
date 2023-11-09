@@ -34,7 +34,7 @@ for (const Estudiante& estudiante : estudiantes) {
     cout<<"Ingrese el grado que desea buscar: ";
     cin>>buscaGrado;
 
-    cout<"Estudiantes en el grado "<<buscaGrado<<": ";
+    cout<<"Estudiantes en el grado " << buscaGrado <<":\n";
     for(const Estudiante& estudiante : estudiantes) {
         if (estudiante.getGrado() == buscaGrado) {
             cout << estudiante.getNombre() << endl;
