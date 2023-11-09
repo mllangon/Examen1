@@ -21,3 +21,8 @@ public:
         }
         cout<<endl;
     }
+
+private:
+    string nombre;
+    vector<string> materias;
+};
