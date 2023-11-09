@@ -28,6 +28,14 @@ public:
                 throw MateriaExcepcion("La materia ya ha sido registrada");
             }
         }
+        materias.push_back(materia);
+    }
+    void lista(){
+        cout << nombre << " registra las siguientes materias: ";
+        for(const string&materia : materias){
+            cout << " " << materia;
+        }
+        cout << endl;
     }
 
 };
