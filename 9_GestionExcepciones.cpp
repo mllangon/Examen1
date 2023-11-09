@@ -22,11 +22,11 @@ private:
 public:
     Estudiante(string nombre): nombre(nombre) {}
 
-    void registrar_materia(const string& materia) {
-        if (materia == "Matematicas" || materia == "Fisica" || materia == "Quimica" || materia == "Historia") {
-            materias.push_back(materia);
-        } else {
-            throw MateriaExcepcion("La materia " + materia + " no esta disponible");
+    void registrar_materia(const string& materia){
+        for(const string& materia_registrada : materias){
+            if(materia_registrada == materia){
+                throw MateriaExcepcion("La materia ya ha sido registrada");
+            }
         }
     }
 
