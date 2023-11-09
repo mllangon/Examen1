@@ -18,7 +18,14 @@ public:
         cin >> grado;
 
         cout <<"Nombre: " << nombre << endl;
-        cout <<"Edad: " << edad <<"anos"<< endl;
+        cout <<"Edad: " << edad <<" anos"<< endl;
         cout <<"Grado: " << grado << endl;
     }
 };
+
+int main(){
+    Estudiante estudiante1;
+    estudiante1.infoEstudiante();
+
+        return 0;
+}
